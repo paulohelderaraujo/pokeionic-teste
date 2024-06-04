@@ -10,7 +10,35 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  }
+  },
+  {
+    path: 'pokeionic',
+    loadChildren: () => import('./pokeionic/pokeionic.module').then( m => m.PokeionicPageModule)
+  },
+  {
+    path: 'pokemon/:id',
+    loadChildren: () => import('./pokemon/pokemon.module').then( m => m.PokemonPageModule)
+  },
+  {
+    path: 'pokebola',
+    loadChildren: () => import('./pokebola/pokebola.module').then( m => m.PokebolaPageModule)
+  },
+  {
+    path: 'pokeionic',
+    loadChildren: () => import('./pokeionic/pokeionic.module').then( m => m.PokeionicPageModule)
+  },
+  {
+    path: 'pokemon',
+    loadChildren: () => import('./pokemon/pokemon.module').then( m => m.PokemonPageModule)
+  },
+  {
+    path: 'pokebola',
+    loadChildren: () => import('./pokebola/pokebola.module').then( m => m.PokebolaPageModule)
+  },
+  {
+    path: 'pokeapi',
+    loadChildren: () => import('./services/apis/pokeapi/pokeapi.module').then( m => m.PokeapiPageModule)
+  },
 ];
 
 @NgModule({
