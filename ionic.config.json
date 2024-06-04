@@ -1,0 +1,7 @@
+{
+  "name": "Poketest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
